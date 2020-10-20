@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+          <ul>
+              <li>早上好</li>
+              <li>早上好</li>
+              <li>早上好</li>
+              <li>早上好</li>
+              <li>早上好</li>
+          </ul>
+          <ol id="ol">
+              <li>中午五号</li>
+              <li>中午五号</li>
+              <li>中午五号</li>
+              <li>中午五号</li>
+              <li>中午五号</li>
+          </ol>
+    </div>
+    <script>
+        var lis= document.getElementsByTagName('li');
+        console.log(lis);
+        console.log(lis[0]);
+        for(var i=1;i<=lis.length;i++){
+            console.log(lis[i]);
+        }
+        var ol=document.getElementById('ol');
+        console.log(ol.getElementsByTagName('li'));
+    //如果页面只有li返回得就是为数组形式
+    </script>
+</body>
+</html>

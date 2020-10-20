@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body>
+    <div class="box">首页</div>
+    <div class="box">首页</div>
+    <div id='box2'></div>
+    <ul>
+        <li>列表页</li>
+        <li>列表页</li>
+    </ul>
+    <script>
+        //1，getElementsByClassName 根据类名获取默写元素
+        var boxs=document.getElementsByClassName('box')
+        console.log(boxs);
+        //querySelector返回指定选择器第一个元素，切记 里面选择器要加符号
+        var box1=document.querySelector('.box');
+        console.log(box1);
+    var box3=document.querySelector('#box2');
+    console.log(box3);
+ //3.querySelectorAll()返回指定选择器得所有元素
+      var str=document.querySelectorAll('.box')
+      console.log(str);
+      var lis  =document.querySelectorAll('li');
+      console.log(lis);
+    </script>
+</body>
+</html>
