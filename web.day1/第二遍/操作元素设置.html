@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .is {
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+    <button>按钮</button>
+    <input type="text">
+    <script>
+        var button = document.querySelector('button');
+        var input = document.querySelector('input')
+        button.onclick = function () {
+            input.value = '何建伟被点击打了'
+            this.disabled = ''
+                input.className ='is';
+        }
+    </script>
+</body>
+
+</html>

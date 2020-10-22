@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <ul>
+       <li></li>
+       <li></li>
+       <li></li>
+       <li></li>
+       <li></li>
+    </ul>
+      <script>
+          var ul =document.querySelector('ul')
+        //1子节点 childNodes所有子节点 包含 元素节点 文本节点等  不提倡比较麻烦
+        console.log(ul.childNodes);
+        console.log(ul.childNodes[0].nodeType);
+        console.log(ul.childNodes[1].nodeType)
+        //2.children获取所有得子元素节点 也是我们实际开发常用得 推荐使用
+        console.log(ul.children);
+      </script>
+</body>
+</html>

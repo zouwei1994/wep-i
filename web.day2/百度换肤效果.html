@@ -45,13 +45,12 @@
         <li><img src="images/4.jpg"></li>
     </ul>
     <script>
-        var baidu=document.querySelectorAll('baidu img');
-        for(var i=0; i<baidu.length;i++){
-            baidu[i].onclick= function(){
-                document.body.style.backgroundImage='url(' + this.src + ')';
-                
-            }
-        }
+        var baidu =document.querySelectorAll('.baidu img');
+          for(var i=0; i<baidu.length;i++){
+              baidu[i].onclick=function(){
+                document.body.style.backgroundImage=`url(${this.src})`
+              }
+          }
     </script>
 </body>
 </html>
